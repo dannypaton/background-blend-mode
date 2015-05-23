@@ -1,0 +1,99 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* http://codepen.io/adobe/pen/FeiCp
+
+Multiply, screen, overlay, darken, lighten, color-dodge,
+color-burn, hard-light, soft-light, difference, exclusion, 
+hue, saturation, color, and luminosity. And also normal which reset it.
+*/
+
+/* example 1 blend color and image - no light, darker, slides */
+
+/*.image-1 {
+  background-color: rebeccapurple;
+}
+.image-2 {
+  background-image: url(http://41.media.tumblr.com/ccc2511b5cf920591b1fa00ce19c6e41/tumblr_nod41bzpqj1st5lhmo4_1280.jpg);
+}
+.image-3 {
+  background-image: url(http://41.media.tumblr.com/ccc2511b5cf920591b1fa00ce19c6e41/tumblr_nod41bzpqj1st5lhmo4_1280.jpg);
+  background-color: rebeccapurple;
+  background-blend-mode: multiply;
+}
+.image-1, .image-2, .image-3 {
+  float: left;
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+}
+.rapper {
+  width: 100%;
+}*/
+
+
+/*example 2 - blend two images - light and dark, contrast */
+
+/*.image-1 {
+  background: black;
+  background-image: url(images/d.png);
+  background-size: 16px 16px;
+}
+.image-2 {
+  background-image: url(http://36.media.tumblr.com/c5d426af46a281611f286a9accef83ca/tumblr_nndj4wwY821st5lhmo1_1280.jpg);
+  background-size: cover;
+}
+.image-3 {
+  background-image: 
+    url(images/d.png),
+    url(http://36.media.tumblr.com/c5d426af46a281611f286a9accef83ca/tumblr_nndj4wwY821st5lhmo1_1280.jpg);
+  background-blend-mode: overlay;
+}
+.image-1, .image-2, .image-3 {
+  float: left;
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+}
+.rapper {
+  width: 100%;
+}*/
+
+
+/*example 3 - blend text and image - no dark, light, projectors */
+
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900);
+header {
+  padding: 120px 50px 170px;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/wisconsin-farmland-3.jpg);
+  background-size: cover;
+}
+header h1 {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 140px;
+  color: darkgrey;
+  mix-blend-mode: overlay;
+  padding: 0;
+  margin: 0;
+  line-height: 0.5;
+}
+
+ /* screen, exclusion, color-dodge */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
